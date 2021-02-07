@@ -1,4 +1,4 @@
-import { formatTimestamp } from "@shlack/utils";
+import { formatTimestamp } from "../src";
 
 describe("formatTimestamp() tests", function () {
   let x = 4;
