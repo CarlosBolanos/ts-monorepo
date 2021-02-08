@@ -1,4 +1,4 @@
-import { isChannel, isMessage, isTeam, isTypedArray } from "../src";
+import { isChannel, isMessage, isTeam, isTypedArray } from "@shlack/types";
 
 describe("isChannel() tests", function () {
   test("valid channel", () => {

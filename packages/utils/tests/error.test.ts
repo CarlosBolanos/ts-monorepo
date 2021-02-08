@@ -1,4 +1,4 @@
-import { HTTPError, stringifyError } from "../src";
+import { HTTPError, stringifyError } from "@shlack/utils";
 
 describe("Error tests", function () {
   test("stringifyError", () => {

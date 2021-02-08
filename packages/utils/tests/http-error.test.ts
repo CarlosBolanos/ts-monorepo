@@ -1,4 +1,4 @@
-import { HTTPError, HTTPErrorKind } from "../src";
+import { HTTPError, HTTPErrorKind } from "@shlack/utils";
 
 describe("HTTPError tests", function () {
   test("creation", () => {

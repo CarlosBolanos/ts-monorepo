@@ -6,24 +6,42 @@
   "author": "Mike North <michael.l.north@gmail.com>",
   "license": "BSD-2-Clause",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
+    "api-report": "scripty",
+    "api-docs": "scripty",
+    "start": "scripty",
+    "dev": "scripty",
     "build": "scripty",
-    "test": "scripty",
     "clean": "scripty",
-    "lint": "scripty"
+    "lint": "scripty",
+    "test": "scripty"
   },
   "scripty": {
     "path": "./scripts/workspace"
   },
-  "workspaces": [
-    "packages/*"
-  ],
+  "resolutions": {
+    "@types/react": "^16.9.52"
+  },
+  "volta": {
+    "node": "12.19.0",
+    "yarn": "1.22.10"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@commitlint/config-lerna-scopes": "^11.0.0",
-    "@typescript-eslint/eslint-plugin": "^4.14.2",
-    "@typescript-eslint/parser": "^4.14.2",
+    "@microsoft/api-documenter": "^7.9.12",
+    "@microsoft/api-extractor": "^7.13.1",
+    "@typescript-eslint/eslint-plugin": "^4.4.1",
+    "@typescript-eslint/parser": "^4.4.1",
     "commitlint": "^11.0.0",
     "eslint": "^7.19.0",
     "husky": "^4.3.8",
