@@ -11,7 +11,7 @@ export async function getChannelMessages(
   if (typeof cached === "undefined")
     cached = cachedMessageRecordArrays[channelId] = apiCall(
       `teams/${teamId}/channels/${channelId}/messages`
-    ).then((rawData) => {      
+    ).then((rawData) => {
       if (isTypedArray(rawData, isMessage)) {
         return rawData;
       } else

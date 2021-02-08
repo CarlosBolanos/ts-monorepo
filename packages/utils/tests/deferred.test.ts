@@ -1,4 +1,4 @@
-import { Deferred } from "../src";
+import { Deferred } from "@shlack/utils";
 
 describe("Deferred tests", function () {
   test("Constructor does not error", () => {
