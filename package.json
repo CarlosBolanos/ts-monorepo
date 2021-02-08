@@ -27,6 +27,9 @@
     "node": "12.19.0",
     "yarn": "1.22.10"
   },
+  "resolutions": {
+    "@types/react": "^16.9.52"
+  },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
