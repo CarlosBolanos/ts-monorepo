@@ -6,6 +6,15 @@
   "author": "Mike North <michael.l.north@gmail.com>",
   "license": "BSD-2-Clause",
   "private": true,
+  "scripts": {
+    "build": "scripty",
+    "test": "scripty",
+    "clean": "scripty",
+    "lint": "scripty"
+  },
+  "scripty": {
+    "path": "./scripts/workspace"
+  },
   "workspaces": [
     "packages/*"
   ],
@@ -14,6 +23,7 @@
     "@typescript-eslint/parser": "^4.14.2",
     "eslint": "^7.19.0",
     "lerna": "^3.22.1",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "scripty": "^2.0.0"
   }
 }
