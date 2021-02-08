@@ -18,6 +18,15 @@
   "workspaces": [
     "packages/*"
   ],
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "volta": {
+    "node": "12.19.0",
+    "yarn": "1.22.10"
+  },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
@@ -28,7 +37,6 @@
     "eslint": "^7.19.0",
     "husky": "^4.3.8",
     "lerna": "^3.22.1",
-    "lerna-changelog": "^1.0.1",
     "rimraf": "^3.0.2",
     "scripty": "^2.0.0"
   }
