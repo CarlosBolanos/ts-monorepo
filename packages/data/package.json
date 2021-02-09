@@ -1,6 +1,6 @@
 {
   "name": "@cbolanos/data",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "publishConfig": {
@@ -27,7 +27,7 @@
     "path": "../../scripts/packages"
   },
   "dependencies": {
-    "@cbolanos/types": "^0.0.2",
-    "@cbolanos/utils": "^0.0.2"
+    "@cbolanos/types": "^0.1.0",
+    "@cbolanos/utils": "^0.0.3"
   }
 }
