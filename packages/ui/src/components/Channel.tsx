@@ -1,7 +1,8 @@
 import * as React from "react";
-import { getChannelMessages } from "@shlack/data";
-import { IChannel, IMessage } from "@shlack/types";
-import { useAsyncDataEffect } from "@shlack/utils";
+
+import { getChannelMessages } from "@cbolanos/data";
+import { IChannel, IMessage } from "@cbolanos/types";
+import { useAsyncDataEffect } from "@cbolanos/utils";
 import ChannelFooter from "./Channel/Footer";
 import ChannelHeader from "./Channel/Header";
 import ChannelMessage from "./Channel/Message";
@@ -9,7 +10,7 @@ import Loading from "./Loading";
 
 const Channel: React.FunctionComponent<{ channel: IChannel }> = ({
   channel,
-}) => {
+}) => {  
   const [messages, setMessages] = React.useState<IMessage[]>();
   useAsyncDataEffect(() => getChannelMessages(channel.teamId, channel.id), {
     setter: setMessages,

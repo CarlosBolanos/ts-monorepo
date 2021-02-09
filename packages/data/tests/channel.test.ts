@@ -1,7 +1,7 @@
-import * as utils from "@shlack/utils";
-import { getChannelById } from "@shlack/data";
+import * as utils from "@cbolanos/utils";
+import { getChannelById } from "@cbolanos/data";
 
-jest.mock("@shlack/utils");
+jest.mock("@cbolanos/utils");
 const mockedApiCall = (utils.apiCall as unknown) as jest.MockedFunction<
   typeof utils["apiCall"]
 >;

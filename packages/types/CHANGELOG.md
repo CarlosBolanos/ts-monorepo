@@ -5,4 +5,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## 0.0.2 (2021-02-08)
 
-**Note:** Version bump only for package @shlack/types
+**Note:** Version bump only for package @cbolanos/types

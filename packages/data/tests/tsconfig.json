@@ -5,7 +5,7 @@
     "types": ["jest"],
     "baseUrl": "..",
     "noEmit": true,
-    "paths": { "@shlack/data": [".."] }
+    "paths": { "@cbolanos/data": [".."] }
   },
   "include": ["."]
 }

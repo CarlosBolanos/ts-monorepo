@@ -20,7 +20,7 @@ export function isTypedArray<T>(
 }
 
 /**
- * Check whether a given value is an {@link @shlack/types#ITeam}
+ * Check whether a given value is an {@link @cbolanos/types#ITeam}
  * @param arg - value to check
  * @beta
  *
@@ -40,7 +40,7 @@ export function isTeam(arg: any): arg is ITeam {
 }
 
 /**
- * Check whether a given value is an {@link @shlack/types#IChannel}
+ * Check whether a given value is an {@link @cbolanos/types#IChannel}
  * @param arg - value to check
  * @beta
  */
@@ -54,7 +54,7 @@ export function isChannel(arg: any): arg is IChannel {
 }
 
 /**
- * Check whether a given value is an {@link @shlack/types#IMessage}
+ * Check whether a given value is an {@link @cbolanos/types#IMessage}
  * @param arg - value to check
  * @beta
  */

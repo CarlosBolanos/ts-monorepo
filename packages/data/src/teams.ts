@@ -1,5 +1,5 @@
-import { apiCall } from "@shlack/utils";
-import { isTeam, isTypedArray, ITeam } from "@shlack/types";
+import { apiCall } from "@cbolanos/utils";
+import { isTeam, isTypedArray, ITeam } from "@cbolanos/types";
 
 let cachedAllTeamsList: Promise<ITeam[]>;
 export async function getAllTeams(): Promise<ITeam[]> {
@@ -17,7 +17,7 @@ export async function getAllTeams(): Promise<ITeam[]> {
 const cachedTeamRecords: Record<string, Promise<ITeam>> = {};
 
 /**
- * Get a {@link @shlack/types#ITeam} by ID
+ * Get a {@link @cbolanos/types#ITeam} by ID
  * @param id id of team to fetch
  */
 export async function getTeamById(id: string): Promise<ITeam> {

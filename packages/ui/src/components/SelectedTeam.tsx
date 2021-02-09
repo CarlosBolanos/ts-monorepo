@@ -1,6 +1,6 @@
 import * as React from "react";
 import { match } from "react-router";
-import type { ITeam } from "@shlack/types";
+import type { ITeam } from "@cbolanos/types";
 import Team from "./Team";
 
 const SelectedTeam: React.FunctionComponent<{

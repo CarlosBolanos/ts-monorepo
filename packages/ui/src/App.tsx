@@ -5,9 +5,9 @@ import {
   Route,
   Switch,
 } from "react-router-dom";
-import { getAllTeams } from "@shlack/data";
-import { ITeam } from "@shlack/types";
-import { useAsyncDataEffect } from "@shlack/utils";
+import { getAllTeams } from "@cbolanos/data";
+import { ITeam } from "@cbolanos/types";
+import { useAsyncDataEffect } from "@cbolanos/utils";
 import Loading from "./components/Loading";
 import SelectedTeam from "./components/SelectedTeam";
 import TeamSelector from "./components/TeamSelector";
@@ -21,6 +21,7 @@ const App: React.FunctionComponent = () => {
     setter: setTeams,
     stateName: "teams",
   });
+  
   if (!teams) return <Loading message="Loading teams" />;
   return (
     <Router>
