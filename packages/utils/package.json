@@ -4,8 +4,11 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "publishConfig": {
-    "access": "public"
+    "access": "restricted"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "api-report": "scripty",
     "clean": "rimraf dist *tsbuildinfo",
